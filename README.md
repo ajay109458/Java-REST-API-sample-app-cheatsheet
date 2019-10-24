@@ -10,11 +10,38 @@ Note: Any one of the below step mentioned in this section is required.
 
 ### Maven based project
 ```
-<dependency>
-    <groupId>org.glassfish.jersey.containers</groupId>
-    <artifactId>jersey-container-servlet</artifactId>
-    <version>2.6</version>
-</dependency>
+<dependencies>
+  	<dependency>
+  		<groupId>org.glassfish.jersey.containers</groupId>
+  		<artifactId>jersey-container-servlet</artifactId>
+  		<version>2.28</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.glassfish.jersey.core</groupId>
+  		<artifactId>jersey-server</artifactId>
+  		<version>2.28</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.glassfish.jersey.core</groupId>
+  		<artifactId>jersey-client</artifactId>
+  		<version>2.28</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.glassfish.jersey.inject</groupId>
+  		<artifactId>jersey-hk2</artifactId>
+  		<version>2.28</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>javax.xml.bind</groupId>
+  		<artifactId>jaxb-api</artifactId>
+  		<version>2.3.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.glassfish.jersey.media</groupId>
+  		<artifactId>jersey-media-json-jackson</artifactId>
+  		<version>2.28</version>
+  	</dependency>
+  </dependencies>
 ```
 
 ### Gradle based project
@@ -105,4 +132,4 @@ public class HelloWorldService {
 ### Access your application
 
 Access below URL in the browser
-http://localhost:8080/<ProjectName>/myrestapi/hello/ajay
+`http://localhost:8080/PROJECT_NAME/myrestapi/hello/ajay`
